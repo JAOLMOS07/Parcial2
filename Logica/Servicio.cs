@@ -11,7 +11,7 @@ namespace Logica
 {
     public class Servicio
     {
-        List<Formulario> listaFormularios = new List<Formulario>();
+        public List<Formulario> listaFormularios = new List<Formulario>();
         Archivo repositorio = new Archivo();
 
         public Servicio()
@@ -67,6 +67,11 @@ namespace Logica
             TotalPago(formulario);
             repositorio.GuardarEnArchivo(formulario);
             Refrescar();
+        }
+            
+        public double Consecutivo()
+        {
+            return listaFormularios[listaFormularios.Count - 1].NumeroFormulario+1;
         }
     }
 }

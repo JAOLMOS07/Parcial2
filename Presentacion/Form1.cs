@@ -5,6 +5,7 @@ namespace Presentacion
 {
     public partial class Form1 : Form
     {
+        Servicio servicio = new Servicio();
         public Form1()
         {
             InitializeComponent();
@@ -55,7 +56,6 @@ namespace Presentacion
             double valorDeclarado = double.Parse(txtvalorDeclarado.Text);
             Formulario formulario = new Formulario(numeroF,id,nombre,fecha,emplazamiento,valorDeclarado,0);
 
-            Servicio servicio = new Servicio();
             servicio.Guardar(formulario);
 
         }
@@ -63,6 +63,15 @@ namespace Presentacion
         private void txtFechaPicker_ValueChanged(object sender, EventArgs e)
         {
             Console.WriteLine("xcv");
+        }
+
+        private void Consecutivo()
+        {
+
+        }
+        public void CargarDataGrid()
+        {
+            grillaDatos.DataSource = servicio.listaFormularios;
         }
     }
 }
