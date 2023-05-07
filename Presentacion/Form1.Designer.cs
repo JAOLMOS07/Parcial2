@@ -204,6 +204,7 @@
             this.txtFechaPicker.Name = "txtFechaPicker";
             this.txtFechaPicker.Size = new System.Drawing.Size(221, 23);
             this.txtFechaPicker.TabIndex = 7;
+            this.txtFechaPicker.ValueChanged += new System.EventHandler(this.txtFechaPicker_ValueChanged);
             // 
             // label4
             // 

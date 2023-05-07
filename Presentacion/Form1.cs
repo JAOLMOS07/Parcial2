@@ -1,4 +1,5 @@
 using Entidades;
+using Logica;
 
 namespace Presentacion
 {
@@ -40,7 +41,9 @@ namespace Presentacion
             
                 fecha = DateTime.MinValue;
             }
+
             bool emplazamiento;
+
             if (rSi.Checked)
             {
                 emplazamiento = true;
@@ -50,9 +53,16 @@ namespace Presentacion
             }
 
             double valorDeclarado = double.Parse(txtvalorDeclarado.Text);
-            Formulario formulario = new Formulario(numeroF,id,nombre,fecha,valorDeclarado,0);
+            Formulario formulario = new Formulario(numeroF,id,nombre,fecha,emplazamiento,valorDeclarado,0);
 
+            Servicio servicio = new Servicio();
+            servicio.Guardar(formulario);
 
+        }
+
+        private void txtFechaPicker_ValueChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine("xcv");
         }
     }
 }
