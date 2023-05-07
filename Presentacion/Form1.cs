@@ -102,12 +102,7 @@ namespace Presentacion
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
-        {
-            foreach (var item in servicio.Mostrar()) 
-            {
-                MessageBox.Show(item.ToString());
-            }
-            
+        {           
             CargarDataGrid();
         }
     }
