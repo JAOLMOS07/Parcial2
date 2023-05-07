@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -49,8 +48,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtFechav = new System.Windows.Forms.TextBox();
-            this.txtSancionv = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtValorDeclaradov = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -69,8 +66,6 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.grillaDatos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,30 +75,18 @@
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaDatos)).BeginInit();
-            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(43, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(788, 560);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(780, 532);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabControl1.TabIndex = 3;
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabPage2
             // 
@@ -113,7 +96,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(780, 532);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Formulario";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -273,14 +256,12 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(780, 532);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Visualizar";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txtFechav);
-            this.groupBox4.Controls.Add(this.txtSancionv);
-            this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.txtValorDeclaradov);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.groupBox6);
@@ -299,7 +280,7 @@
             this.groupBox4.Size = new System.Drawing.Size(748, 248);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Visualizar";
             // 
             // txtFechav
             // 
@@ -308,27 +289,11 @@
             this.txtFechav.Size = new System.Drawing.Size(221, 23);
             this.txtFechav.TabIndex = 27;
             // 
-            // txtSancionv
-            // 
-            this.txtSancionv.Location = new System.Drawing.Point(561, 134);
-            this.txtSancionv.Name = "txtSancionv";
-            this.txtSancionv.Size = new System.Drawing.Size(101, 23);
-            this.txtSancionv.TabIndex = 26;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(561, 116);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 15);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Sanción:";
-            // 
             // txtValorDeclaradov
             // 
             this.txtValorDeclaradov.Location = new System.Drawing.Point(450, 134);
             this.txtValorDeclaradov.Name = "txtValorDeclaradov";
-            this.txtValorDeclaradov.Size = new System.Drawing.Size(101, 23);
+            this.txtValorDeclaradov.Size = new System.Drawing.Size(221, 23);
             this.txtValorDeclaradov.TabIndex = 24;
             // 
             // label12
@@ -455,7 +420,7 @@
             this.groupBox3.Size = new System.Drawing.Size(748, 271);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Text = "Lista de Registros";
             // 
             // txtBuscar
             // 
@@ -470,7 +435,7 @@
             this.grillaDatos.Location = new System.Drawing.Point(16, 59);
             this.grillaDatos.Name = "grillaDatos";
             this.grillaDatos.RowTemplate.Height = 25;
-            this.grillaDatos.Size = new System.Drawing.Size(711, 148);
+            this.grillaDatos.Size = new System.Drawing.Size(711, 178);
             this.grillaDatos.TabIndex = 0;
             // 
             // label6
@@ -481,26 +446,6 @@
             this.label6.Size = new System.Drawing.Size(186, 15);
             this.label6.TabIndex = 2;
             this.label6.Text = "Buscar por número de formulario:";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(780, 532);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Location = new System.Drawing.Point(22, 19);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(732, 318);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "groupBox5";
             // 
             // Form1
             // 
@@ -524,7 +469,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaDatos)).EndInit();
-            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -532,7 +476,6 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPage1;
         private TabPage tabPage2;
         private GroupBox groupBox1;
         private TextBox txtnumeroFormulario;
@@ -567,10 +510,6 @@
         private TextBox txtBuscar;
         private DataGridView grillaDatos;
         private Label label6;
-        private TabPage tabPage4;
-        private GroupBox groupBox5;
-        private TextBox txtSancionv;
-        private Label label13;
         private TextBox txtValorDeclaradov;
         private Label label12;
         private TextBox txtFechav;

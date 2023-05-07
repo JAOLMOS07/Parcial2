@@ -22,9 +22,11 @@ namespace Datos
                 StreamReader lector = new StreamReader(ruta);
 
                 string linea;
+
                 while ((linea = lector.ReadLine()) != null)
                 {
-                    string[] campos = linea.Split(',');
+                    Console.WriteLine(linea + "----------------------------------");
+                    string[] campos = linea.Split(';');
 
                     double numeroFormulario = double.Parse(campos[0]);
                     string idNit = campos[1];

@@ -43,6 +43,19 @@ namespace Logica
             return 1160000 / 30;
         }
 
+        public Formulario Traerultimo() 
+        {
+            listaFormularios = repositorio.ObtenerFormulariosDesdeArchivo();
+            Formulario ultimoFormulario = null;
+            if (listaFormularios.Count > 0)
+            {
+                ultimoFormulario = listaFormularios[listaFormularios.Count - 1];
+            }
+            return ultimoFormulario;
+
+
+        } 
+
         public void TotalPago(Formulario formulario)
         {
             double Pago;
@@ -60,7 +73,9 @@ namespace Logica
 
         private void Refrescar()
         {
-            listaFormularios=repositorio.ObtenerFormulariosDesdeArchivo();
+            Archivo repositorio = new Archivo();
+            listaFormularios =repositorio.ObtenerFormulariosDesdeArchivo();
+            Console.WriteLine(listaFormularios);
         }
         public void Guardar(Formulario formulario)
         {
