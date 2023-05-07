@@ -23,7 +23,6 @@ namespace Datos
                     formularios.Add(Mapeador(lector.ReadLine()));
                 }
                 lector.Close();
-            Console.WriteLine(formularios[0].ToString());
             return formularios;
         }
         public void GuardarEnArchivo(Formulario formulario)

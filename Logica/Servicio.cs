@@ -60,7 +60,12 @@ namespace Logica
 
         public List<Formulario> ObtenerListaFormularios()
         {
-            return repositorio.ObtenerFormulariosDesdeArchivo();
+            return listaFormularios;
+        }
+
+        public List<Formulario> Mostrar()
+        {
+            return ObtenerListaFormularios();
         }
         private void Refrescar()
         {
