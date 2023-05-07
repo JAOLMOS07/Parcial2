@@ -13,37 +13,36 @@ namespace Datos
     public class Archivo
     {
         string ruta = "formularios.txt";
-        public List<Formulario> ObtenerFormulariosDesdeArchivo()
+        public List<Formulario> ObtenerFormulariosDesdeArchivo(string rutaArchivo)
         {
             List<Formulario> formularios = new List<Formulario>();
 
-            if (File.Exists(ruta))
+            try
             {
-                using (StreamReader reader = new StreamReader(ruta))
+                StreamReader lector = new StreamReader(rutaArchivo);
+
+                string linea;
+                while ((linea = lector.ReadLine()) != null)
                 {
-                    string linea;
-                    while ((linea = reader.ReadLine()) != null)
-                    {
-                        string[] datos = linea.Split(',');
+                    string[] campos = linea.Split(',');
 
-                        double numeroFormulario =Double.Parse(datos[0]);
-                        string idNit = datos[1];
-                        string nombreRazonSocial = datos[2];
-                        DateTime diaDeclaracionRealizada = DateTime.ParseExact(datos[3], "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                        bool emplazamiento = Convert.ToBoolean(datos[4]);
-                        double valorDeclarado = Convert.ToDouble(datos[5]);
-                        double totalPago = Convert.ToDouble(datos[6]);
-
-                        if (emplazamiento)
-                        {
-                            formularios.Add(new Formulario(numeroFormulario, idNit, nombreRazonSocial, diaDeclaracionRealizada, emplazamiento, valorDeclarado, totalPago));
-                        }
-                        else
-                        {
-                            formularios.Add(new Formulario(numeroFormulario, idNit, nombreRazonSocial, diaDeclaracionRealizada, valorDeclarado, totalPago));
-                        }
-                    }
+                    double numeroFormulario = double.Parse(campos[0]);
+                    string idNit = campos[1];
+                    string nombreRazonSocial = campos[2];
+                    DateTime diaDeclaracionRealizada = DateTime.Parse(campos[3]);
+                    bool emplazamiento = bool.Parse(campos[4]);
+                    double valorDeclarado = double.Parse(campos[5]);
+                    double totalPago = double.Parse(campos[6]);
+           
+                    formularios.Add(new Formulario(numeroFormulario, idNit, nombreRazonSocial, diaDeclaracionRealizada,emplazamiento, valorDeclarado, totalPago));
+                    
                 }
+
+                lector.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al leer el archivo: " + ex.Message);
             }
 
             return formularios;
