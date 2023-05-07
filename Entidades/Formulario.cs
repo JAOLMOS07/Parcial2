@@ -38,5 +38,11 @@ namespace Entidades
             ValorDeclarado = valorDeclarado;
             TotalPago = totalPago;
         }
+
+        public override string ToString()
+        {
+            return $"{NumeroFormulario};{IdNit};{NombreRazonSocial};{DiaDeclaracionRealizada.ToShortDateString()};" +
+                $"{ValorDeclarado},{TotalPago}";
+        }
     }
 }
