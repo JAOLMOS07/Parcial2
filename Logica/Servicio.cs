@@ -13,6 +13,7 @@ namespace Logica
     public class Servicio
     {
         List<Formulario> listaFormularios = new List<Formulario>();
+        Archivo repositorio = new Archivo();
 
         public Servicio() 
         {
