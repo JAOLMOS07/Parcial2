@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Datos;
 using Entidades;
-using Datos;
 
 namespace Logica
 {
@@ -17,7 +16,7 @@ namespace Logica
 
         public Servicio() 
         {
-            listaFormularios = repositorio.ConsultarTodos();
+            listaFormularios = repositorio.ObtenerFormulariosDesdeArchivo();
         }
 
         public double SancionExtemporanea(Formulario formulario)
@@ -61,12 +60,12 @@ namespace Logica
 
         public void Refrescar()
         {
-            listaFormularios=repositorio.ConsultarTodos();
+            listaFormularios=repositorio.ObtenerFormulariosDesdeArchivo();
         }
         public void Guardar(Formulario formulario)
         {
             TotalPago(formulario);
-            repositorio.GuardarArchivo(formulario);
+            repositorio.GuardarEnArchivo(formulario);
             Refrescar();
         }
     }
