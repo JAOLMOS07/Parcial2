@@ -11,7 +11,7 @@ namespace Logica
 {
     public class Servicio
     {
-        List<Formulario> listaFormularios = new List<Formulario>();
+        public List<Formulario> listaFormularios = new List<Formulario>();
         Archivo repositorio = new Archivo();
 
         public Servicio()
@@ -71,6 +71,10 @@ namespace Logica
             formulario.TotalPago = Pago;
         }
 
+        public List<Formulario> ObtenerListaFormularios()
+        {
+            return repositorio.ObtenerFormulariosDesdeArchivo();
+        }
         private void Refrescar()
         {
             Archivo repositorio = new Archivo();
@@ -82,6 +86,11 @@ namespace Logica
             TotalPago(formulario);
             repositorio.GuardarEnArchivo(formulario);
             Refrescar();
+        }
+            
+        public double Consecutivo()
+        {
+            return listaFormularios[listaFormularios.Count - 1].NumeroFormulario+1;
         }
     }
 }

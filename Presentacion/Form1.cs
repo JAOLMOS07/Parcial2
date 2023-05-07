@@ -5,6 +5,7 @@ namespace Presentacion
 {
     public partial class Form1 : Form
     {
+        Servicio servicio = new Servicio();
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace Presentacion
             }
             else
             {
-            
+
                 fecha = DateTime.MinValue;
             }
 
@@ -48,14 +49,14 @@ namespace Presentacion
             {
                 emplazamiento = true;
             }
-            else {
-            emplazamiento= false;
+            else
+            {
+                emplazamiento = false;
             }
 
             double valorDeclarado = double.Parse(txtvalorDeclarado.Text);
-            Formulario formulario = new Formulario(numeroF,id,nombre,fecha,emplazamiento,valorDeclarado,0);
+            Formulario formulario = new Formulario(numeroF, id, nombre, fecha, emplazamiento, valorDeclarado, 0);
 
-            Servicio servicio = new Servicio();
             servicio.Guardar(formulario);
             limpiar();
             //Form2 form2 = new Form2();
@@ -79,6 +80,25 @@ namespace Presentacion
         private void tabControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void Refrescar()
+        {
+            CargarDataGrid();
+        }
+        public void CargarDataGrid()
+        {
+            grillaDatos.DataSource = servicio.ObtenerListaFormularios();
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Refrescar();
         }
     }
 }
