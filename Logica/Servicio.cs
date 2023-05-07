@@ -78,7 +78,7 @@ namespace Logica
 
         public List<Formulario> Mostrar()
         {
-            return ObtenerListaFormularios();
+            return listaFormularios = repositorio.ObtenerFormulariosDesdeArchivo();
         }
         private void Refrescar()
         {

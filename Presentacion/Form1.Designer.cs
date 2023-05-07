@@ -28,466 +28,478 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rNo = new System.Windows.Forms.RadioButton();
-            this.rSi = new System.Windows.Forms.RadioButton();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.txtvalorDeclarado = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtFechaPicker = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtnumeroFormulario = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtFechav = new System.Windows.Forms.TextBox();
-            this.txtValorDeclaradov = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.rNov = new System.Windows.Forms.RadioButton();
-            this.rSiv = new System.Windows.Forms.RadioButton();
-            this.txtTotalDeclarado = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtNombrev = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtIDv = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtNum = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.grillaDatos = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaDatos)).BeginInit();
-            this.SuspendLayout();
+            tabControl1 = new TabControl();
+            tabPage2 = new TabPage();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            rNo = new RadioButton();
+            rSi = new RadioButton();
+            btnRegistrar = new Button();
+            txtvalorDeclarado = new TextBox();
+            label5 = new Label();
+            txtFechaPicker = new DateTimePicker();
+            label4 = new Label();
+            txtNombre = new TextBox();
+            label3 = new Label();
+            txtID = new TextBox();
+            label2 = new Label();
+            txtnumeroFormulario = new TextBox();
+            label1 = new Label();
+            tabPage3 = new TabPage();
+            groupBox4 = new GroupBox();
+            txtFechav = new TextBox();
+            txtValorDeclaradov = new TextBox();
+            label12 = new Label();
+            groupBox6 = new GroupBox();
+            rNov = new RadioButton();
+            rSiv = new RadioButton();
+            txtTotalDeclarado = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            txtNombrev = new TextBox();
+            label9 = new Label();
+            txtIDv = new TextBox();
+            label10 = new Label();
+            txtNum = new TextBox();
+            label11 = new Label();
+            groupBox3 = new GroupBox();
+            txtBuscar = new TextBox();
+            grillaDatos = new DataGridView();
+            label6 = new Label();
+            tabControl1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            tabPage3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox6.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)grillaDatos).BeginInit();
+            SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(43, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(788, 563);
-            this.tabControl1.TabIndex = 3;
-            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Location = new Point(49, 16);
+            tabControl1.Margin = new Padding(3, 4, 3, 4);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(901, 751);
+            tabControl1.TabIndex = 3;
+            tabControl1.Click += tabControl1_Click;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(780, 535);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Formulario";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(groupBox1);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Margin = new Padding(3, 4, 3, 4);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3, 4, 3, 4);
+            tabPage2.Size = new Size(893, 718);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Formulario";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.btnRegistrar);
-            this.groupBox1.Controls.Add(this.txtvalorDeclarado);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtFechaPicker);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtnumeroFormulario);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(0, 7);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(776, 531);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Fromulario del impuesto de Avisos y tableros";
+            groupBox1.Controls.Add(groupBox2);
+            groupBox1.Controls.Add(btnRegistrar);
+            groupBox1.Controls.Add(txtvalorDeclarado);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(txtFechaPicker);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(txtNombre);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txtID);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(txtnumeroFormulario);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(0, 9);
+            groupBox1.Margin = new Padding(3, 5, 3, 5);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 5, 3, 5);
+            groupBox1.Size = new Size(887, 708);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Fromulario del impuesto de Avisos y tableros";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.rNo);
-            this.groupBox2.Controls.Add(this.rSi);
-            this.groupBox2.Location = new System.Drawing.Point(503, 127);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(241, 61);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Emplazamiento:";
+            groupBox2.Controls.Add(rNo);
+            groupBox2.Controls.Add(rSi);
+            groupBox2.Location = new Point(575, 169);
+            groupBox2.Margin = new Padding(3, 5, 3, 5);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new Padding(3, 5, 3, 5);
+            groupBox2.Size = new Size(275, 81);
+            groupBox2.TabIndex = 11;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Emplazamiento:";
             // 
             // rNo
             // 
-            this.rNo.AutoSize = true;
-            this.rNo.Checked = true;
-            this.rNo.Location = new System.Drawing.Point(127, 28);
-            this.rNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rNo.Name = "rNo";
-            this.rNo.Size = new System.Drawing.Size(41, 19);
-            this.rNo.TabIndex = 1;
-            this.rNo.TabStop = true;
-            this.rNo.Text = "No";
-            this.rNo.UseVisualStyleBackColor = true;
+            rNo.AutoSize = true;
+            rNo.Checked = true;
+            rNo.Location = new Point(145, 37);
+            rNo.Margin = new Padding(3, 5, 3, 5);
+            rNo.Name = "rNo";
+            rNo.Size = new Size(50, 24);
+            rNo.TabIndex = 1;
+            rNo.TabStop = true;
+            rNo.Text = "No";
+            rNo.UseVisualStyleBackColor = true;
             // 
             // rSi
             // 
-            this.rSi.AutoSize = true;
-            this.rSi.Location = new System.Drawing.Point(17, 28);
-            this.rSi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rSi.Name = "rSi";
-            this.rSi.Size = new System.Drawing.Size(34, 19);
-            this.rSi.TabIndex = 0;
-            this.rSi.Text = "Si";
-            this.rSi.UseVisualStyleBackColor = true;
+            rSi.AutoSize = true;
+            rSi.Location = new Point(19, 37);
+            rSi.Margin = new Padding(3, 5, 3, 5);
+            rSi.Name = "rSi";
+            rSi.Size = new Size(42, 24);
+            rSi.TabIndex = 0;
+            rSi.Text = "Si";
+            rSi.UseVisualStyleBackColor = true;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(365, 339);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(86, 31);
-            this.btnRegistrar.TabIndex = 10;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Location = new Point(417, 452);
+            btnRegistrar.Margin = new Padding(3, 5, 3, 5);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(98, 41);
+            btnRegistrar.TabIndex = 10;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click_1;
             // 
             // txtvalorDeclarado
             // 
-            this.txtvalorDeclarado.Location = new System.Drawing.Point(503, 237);
-            this.txtvalorDeclarado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtvalorDeclarado.Name = "txtvalorDeclarado";
-            this.txtvalorDeclarado.Size = new System.Drawing.Size(252, 23);
-            this.txtvalorDeclarado.TabIndex = 9;
+            txtvalorDeclarado.Location = new Point(575, 316);
+            txtvalorDeclarado.Margin = new Padding(3, 5, 3, 5);
+            txtvalorDeclarado.Name = "txtvalorDeclarado";
+            txtvalorDeclarado.Size = new Size(287, 27);
+            txtvalorDeclarado.TabIndex = 9;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(503, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Valor Declarado:";
+            label5.AutoSize = true;
+            label5.Location = new Point(575, 261);
+            label5.Name = "label5";
+            label5.Size = new Size(119, 20);
+            label5.TabIndex = 8;
+            label5.Text = "Valor Declarado:";
             // 
             // txtFechaPicker
             // 
-            this.txtFechaPicker.Location = new System.Drawing.Point(503, 83);
-            this.txtFechaPicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtFechaPicker.Name = "txtFechaPicker";
-            this.txtFechaPicker.Size = new System.Drawing.Size(252, 23);
-            this.txtFechaPicker.TabIndex = 7;
+            txtFechaPicker.Location = new Point(575, 111);
+            txtFechaPicker.Margin = new Padding(3, 5, 3, 5);
+            txtFechaPicker.Name = "txtFechaPicker";
+            txtFechaPicker.Size = new Size(287, 27);
+            txtFechaPicker.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(503, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Fecha: ";
+            label4.AutoSize = true;
+            label4.Location = new Point(575, 79);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 20);
+            label4.TabIndex = 6;
+            label4.Text = "Fecha: ";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(85, 237);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(252, 23);
-            this.txtNombre.TabIndex = 5;
+            txtNombre.Location = new Point(97, 316);
+            txtNombre.Margin = new Padding(3, 5, 3, 5);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(287, 27);
+            txtNombre.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(85, 213);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Nombre(Razón Social)";
+            label3.AutoSize = true;
+            label3.Location = new Point(97, 284);
+            label3.Name = "label3";
+            label3.Size = new Size(159, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Nombre(Razón Social)";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(85, 157);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(252, 23);
-            this.txtID.TabIndex = 3;
+            txtID.Location = new Point(97, 209);
+            txtID.Margin = new Padding(3, 5, 3, 5);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(287, 27);
+            txtID.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 127);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Identificación (NIT):";
+            label2.AutoSize = true;
+            label2.Location = new Point(97, 169);
+            label2.Name = "label2";
+            label2.Size = new Size(139, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Identificación (NIT):";
             // 
             // txtnumeroFormulario
             // 
-            this.txtnumeroFormulario.Location = new System.Drawing.Point(234, 55);
-            this.txtnumeroFormulario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtnumeroFormulario.Name = "txtnumeroFormulario";
-            this.txtnumeroFormulario.Size = new System.Drawing.Size(102, 23);
-            this.txtnumeroFormulario.TabIndex = 1;
+            txtnumeroFormulario.Location = new Point(267, 73);
+            txtnumeroFormulario.Margin = new Padding(3, 5, 3, 5);
+            txtnumeroFormulario.Name = "txtnumeroFormulario";
+            txtnumeroFormulario.Size = new Size(116, 27);
+            txtnumeroFormulario.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Numero de Formulario:";
+            label1.AutoSize = true;
+            label1.Location = new Point(89, 79);
+            label1.Name = "label1";
+            label1.Size = new Size(163, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Numero de Formulario:";
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.groupBox4);
-            this.tabPage3.Controls.Add(this.groupBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(780, 535);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Visualizar";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(groupBox4);
+            tabPage3.Controls.Add(groupBox3);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Margin = new Padding(3, 4, 3, 4);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3, 4, 3, 4);
+            tabPage3.Size = new Size(893, 718);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Visualizar";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.txtFechav);
-            this.groupBox4.Controls.Add(this.txtValorDeclaradov);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.groupBox6);
-            this.groupBox4.Controls.Add(this.txtTotalDeclarado);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.txtNombrev);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.txtIDv);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.txtNum);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Enabled = false;
-            this.groupBox4.Location = new System.Drawing.Point(16, 277);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(748, 248);
-            this.groupBox4.TabIndex = 5;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Visualizar";
+            groupBox4.Controls.Add(txtFechav);
+            groupBox4.Controls.Add(txtValorDeclaradov);
+            groupBox4.Controls.Add(label12);
+            groupBox4.Controls.Add(groupBox6);
+            groupBox4.Controls.Add(txtTotalDeclarado);
+            groupBox4.Controls.Add(label7);
+            groupBox4.Controls.Add(label8);
+            groupBox4.Controls.Add(txtNombrev);
+            groupBox4.Controls.Add(label9);
+            groupBox4.Controls.Add(txtIDv);
+            groupBox4.Controls.Add(label10);
+            groupBox4.Controls.Add(txtNum);
+            groupBox4.Controls.Add(label11);
+            groupBox4.Enabled = false;
+            groupBox4.Location = new Point(18, 369);
+            groupBox4.Margin = new Padding(3, 4, 3, 4);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Padding = new Padding(3, 4, 3, 4);
+            groupBox4.Size = new Size(855, 331);
+            groupBox4.TabIndex = 5;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Visualizar";
             // 
             // txtFechav
             // 
-            this.txtFechav.Location = new System.Drawing.Point(514, 41);
-            this.txtFechav.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtFechav.Name = "txtFechav";
-            this.txtFechav.Size = new System.Drawing.Size(252, 23);
-            this.txtFechav.TabIndex = 27;
+            txtFechav.Location = new Point(587, 55);
+            txtFechav.Margin = new Padding(3, 5, 3, 5);
+            txtFechav.Name = "txtFechav";
+            txtFechav.Size = new Size(287, 27);
+            txtFechav.TabIndex = 27;
             // 
             // txtValorDeclaradov
             // 
-            this.txtValorDeclaradov.Location = new System.Drawing.Point(508, 179);
-            this.txtValorDeclaradov.Name = "txtValorDeclaradov";
-            this.txtValorDeclaradov.Size = new System.Drawing.Size(221, 23);
-            this.txtValorDeclaradov.TabIndex = 24;
+            txtValorDeclaradov.Location = new Point(581, 239);
+            txtValorDeclaradov.Margin = new Padding(3, 4, 3, 4);
+            txtValorDeclaradov.Name = "txtValorDeclaradov";
+            txtValorDeclaradov.Size = new Size(252, 27);
+            txtValorDeclaradov.TabIndex = 24;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(514, 155);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 15);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Valor declarado:";
+            label12.AutoSize = true;
+            label12.Location = new Point(587, 207);
+            label12.Name = "label12";
+            label12.Size = new Size(117, 20);
+            label12.TabIndex = 23;
+            label12.Text = "Valor declarado:";
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.rNov);
-            this.groupBox6.Controls.Add(this.rSiv);
-            this.groupBox6.Location = new System.Drawing.Point(514, 85);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox6.Size = new System.Drawing.Size(241, 61);
-            this.groupBox6.TabIndex = 22;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Emplazamiento:";
-            this.groupBox6.Visible = false;
+            groupBox6.Controls.Add(rNov);
+            groupBox6.Controls.Add(rSiv);
+            groupBox6.Location = new Point(587, 113);
+            groupBox6.Margin = new Padding(3, 5, 3, 5);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Padding = new Padding(3, 5, 3, 5);
+            groupBox6.Size = new Size(275, 81);
+            groupBox6.TabIndex = 22;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Emplazamiento:";
+            groupBox6.Visible = false;
             // 
             // rNov
             // 
-            this.rNov.AutoSize = true;
-            this.rNov.Location = new System.Drawing.Point(127, 28);
-            this.rNov.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rNov.Name = "rNov";
-            this.rNov.Size = new System.Drawing.Size(41, 19);
-            this.rNov.TabIndex = 1;
-            this.rNov.Text = "No";
-            this.rNov.UseVisualStyleBackColor = true;
+            rNov.AutoSize = true;
+            rNov.Location = new Point(145, 37);
+            rNov.Margin = new Padding(3, 5, 3, 5);
+            rNov.Name = "rNov";
+            rNov.Size = new Size(50, 24);
+            rNov.TabIndex = 1;
+            rNov.Text = "No";
+            rNov.UseVisualStyleBackColor = true;
             // 
             // rSiv
             // 
-            this.rSiv.AutoSize = true;
-            this.rSiv.Location = new System.Drawing.Point(17, 28);
-            this.rSiv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rSiv.Name = "rSiv";
-            this.rSiv.Size = new System.Drawing.Size(34, 19);
-            this.rSiv.TabIndex = 0;
-            this.rSiv.Text = "Si";
-            this.rSiv.UseVisualStyleBackColor = true;
+            rSiv.AutoSize = true;
+            rSiv.Location = new Point(19, 37);
+            rSiv.Margin = new Padding(3, 5, 3, 5);
+            rSiv.Name = "rSiv";
+            rSiv.Size = new Size(42, 24);
+            rSiv.TabIndex = 0;
+            rSiv.Text = "Si";
+            rSiv.UseVisualStyleBackColor = true;
             // 
             // txtTotalDeclarado
             // 
-            this.txtTotalDeclarado.Location = new System.Drawing.Point(289, 276);
-            this.txtTotalDeclarado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTotalDeclarado.Name = "txtTotalDeclarado";
-            this.txtTotalDeclarado.Size = new System.Drawing.Size(252, 23);
-            this.txtTotalDeclarado.TabIndex = 21;
+            txtTotalDeclarado.Location = new Point(330, 368);
+            txtTotalDeclarado.Margin = new Padding(3, 5, 3, 5);
+            txtTotalDeclarado.Name = "txtTotalDeclarado";
+            txtTotalDeclarado.Size = new Size(287, 27);
+            txtTotalDeclarado.TabIndex = 21;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(363, 252);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 15);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Total declarado:";
+            label7.AutoSize = true;
+            label7.Location = new Point(415, 336);
+            label7.Name = "label7";
+            label7.Size = new Size(116, 20);
+            label7.TabIndex = 20;
+            label7.Text = "Total declarado:";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(514, 17);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 15);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Fecha: ";
+            label8.AutoSize = true;
+            label8.Location = new Point(587, 23);
+            label8.Name = "label8";
+            label8.Size = new Size(54, 20);
+            label8.TabIndex = 18;
+            label8.Text = "Fecha: ";
             // 
             // txtNombrev
             // 
-            this.txtNombrev.Location = new System.Drawing.Point(96, 179);
-            this.txtNombrev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtNombrev.Name = "txtNombrev";
-            this.txtNombrev.Size = new System.Drawing.Size(252, 23);
-            this.txtNombrev.TabIndex = 17;
+            txtNombrev.Location = new Point(110, 239);
+            txtNombrev.Margin = new Padding(3, 5, 3, 5);
+            txtNombrev.Name = "txtNombrev";
+            txtNombrev.Size = new Size(287, 27);
+            txtNombrev.TabIndex = 17;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(96, 155);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 15);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Nombre(Razón Social)";
+            label9.AutoSize = true;
+            label9.Location = new Point(110, 207);
+            label9.Name = "label9";
+            label9.Size = new Size(159, 20);
+            label9.TabIndex = 16;
+            label9.Text = "Nombre(Razón Social)";
             // 
             // txtIDv
             // 
-            this.txtIDv.Location = new System.Drawing.Point(96, 99);
-            this.txtIDv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtIDv.Name = "txtIDv";
-            this.txtIDv.Size = new System.Drawing.Size(252, 23);
-            this.txtIDv.TabIndex = 15;
+            txtIDv.Location = new Point(110, 132);
+            txtIDv.Margin = new Padding(3, 5, 3, 5);
+            txtIDv.Name = "txtIDv";
+            txtIDv.Size = new Size(287, 27);
+            txtIDv.TabIndex = 15;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(96, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 15);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Identificación (NIT):";
+            label10.AutoSize = true;
+            label10.Location = new Point(110, 91);
+            label10.Name = "label10";
+            label10.Size = new Size(139, 20);
+            label10.TabIndex = 14;
+            label10.Text = "Identificación (NIT):";
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(246, 24);
-            this.txtNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(102, 23);
-            this.txtNum.TabIndex = 13;
+            txtNum.Location = new Point(281, 32);
+            txtNum.Margin = new Padding(3, 5, 3, 5);
+            txtNum.Name = "txtNum";
+            txtNum.Size = new Size(116, 27);
+            txtNum.TabIndex = 13;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(89, 28);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 15);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Numero de Formulario:";
+            label11.AutoSize = true;
+            label11.Location = new Point(102, 37);
+            label11.Name = "label11";
+            label11.Size = new Size(163, 20);
+            label11.TabIndex = 12;
+            label11.Text = "Numero de Formulario:";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.txtBuscar);
-            this.groupBox3.Controls.Add(this.grillaDatos);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(16, 0);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(748, 271);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Lista de Registros";
+            groupBox3.Controls.Add(txtBuscar);
+            groupBox3.Controls.Add(grillaDatos);
+            groupBox3.Controls.Add(label6);
+            groupBox3.Location = new Point(18, 0);
+            groupBox3.Margin = new Padding(3, 4, 3, 4);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(3, 4, 3, 4);
+            groupBox3.Size = new Size(855, 361);
+            groupBox3.TabIndex = 4;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Lista de Registros";
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(255, 32);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(226, 23);
-            this.txtBuscar.TabIndex = 3;
+            txtBuscar.Location = new Point(291, 43);
+            txtBuscar.Margin = new Padding(3, 5, 3, 5);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(258, 27);
+            txtBuscar.TabIndex = 3;
             // 
             // grillaDatos
             // 
-            this.grillaDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaDatos.Location = new System.Drawing.Point(18, 70);
-            this.grillaDatos.Name = "grillaDatos";
-            this.grillaDatos.RowTemplate.Height = 25;
-            this.grillaDatos.Size = new System.Drawing.Size(711, 178);
-            this.grillaDatos.TabIndex = 0;
+            grillaDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grillaDatos.Location = new Point(40, 94);
+            grillaDatos.Margin = new Padding(3, 4, 3, 4);
+            grillaDatos.Name = "grillaDatos";
+            grillaDatos.RowHeadersWidth = 51;
+            grillaDatos.RowTemplate.Height = 25;
+            grillaDatos.Size = new Size(794, 236);
+            grillaDatos.TabIndex = 0;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 40);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 15);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Buscar por número de formulario:";
+            label6.AutoSize = true;
+            label6.Location = new Point(40, 53);
+            label6.Name = "label6";
+            label6.Size = new Size(232, 20);
+            label6.TabIndex = 2;
+            label6.Text = "Buscar por número de formulario:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(871, 587);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaDatos)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(995, 783);
+            Controls.Add(tabControl1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load_1;
+            tabControl1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)grillaDatos).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

@@ -59,11 +59,11 @@ namespace Presentacion
 
             servicio.Guardar(formulario);
             limpiar();
-            //Form2 form2 = new Form2();
-            //form2.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
         }
 
-        public void limpiar() 
+        public void limpiar()
         {
             txtnumeroFormulario.Text = "";
             txtID.Text = "";
@@ -74,7 +74,7 @@ namespace Presentacion
 
         private void txtFechaPicker_ValueChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void tabControl1_Click(object sender, EventArgs e)
@@ -88,17 +88,27 @@ namespace Presentacion
         }
         public void CargarDataGrid()
         {
-            grillaDatos.DataSource = servicio.ObtenerListaFormularios();
+            grillaDatos.DataSource = servicio.Mostrar();
         }
 
         private void tabPage3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnRegistrar_Click_1(object sender, EventArgs e)
         {
-            Refrescar();
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            foreach (var item in servicio.Mostrar()) 
+            {
+                MessageBox.Show(item.ToString());
+            }
+            
+            CargarDataGrid();
         }
     }
 }
