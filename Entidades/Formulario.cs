@@ -14,19 +14,21 @@ namespace Entidades
         public DateTime DiaDeclaracionRealizada;
         public bool Emplazamiento;
         public double ValorDeclarado;
+        public double TotalPago;
 
         public Formulario() { }
 
-        public Formulario(double numeroFormulario, string idNit, string nombreRazonSocial, DateTime diaDeclaracionRealizada, double valorDeclarado)
+        public Formulario(double numeroFormulario, string idNit, string nombreRazonSocial, DateTime diaDeclaracionRealizada, double valorDeclarado,double totalPago)
         {
             NumeroFormulario = numeroFormulario;
             IdNit = idNit;
             NombreRazonSocial = nombreRazonSocial;
             DiaDeclaracionRealizada = diaDeclaracionRealizada;
             ValorDeclarado = valorDeclarado;
+            TotalPago = totalPago;
         }
 
-        public Formulario(double numeroFormulario, string idNit, string nombreRazonSocial, DateTime diaDeclaracionRealizada, bool emplazamiento, double valorDeclarado)
+        public Formulario(double numeroFormulario, string idNit, string nombreRazonSocial, DateTime diaDeclaracionRealizada, bool emplazamiento, double valorDeclarado, double totalPago)
         {
             NumeroFormulario = numeroFormulario;
             IdNit = idNit;
@@ -34,6 +36,7 @@ namespace Entidades
             DiaDeclaracionRealizada = diaDeclaracionRealizada;
             Emplazamiento = emplazamiento;
             ValorDeclarado = valorDeclarado;
+            TotalPago = totalPago;
         }
     }
 }
