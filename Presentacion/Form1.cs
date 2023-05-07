@@ -58,12 +58,28 @@ namespace Presentacion
             Formulario formulario = new Formulario(numeroF, id, nombre, fecha, emplazamiento, valorDeclarado, 0);
 
             servicio.Guardar(formulario);
+            limpiar();
+            //Form2 form2 = new Form2();
+            //form2.ShowDialog();
+        }
+
+        public void limpiar() 
+        {
+            txtnumeroFormulario.Text = "";
+            txtID.Text = "";
+            txtNombre.Text = "";
+            txtvalorDeclarado.Text = "";
 
         }
 
         private void txtFechaPicker_ValueChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("xcv");
+           
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+
         }
 
         public void Refrescar()
