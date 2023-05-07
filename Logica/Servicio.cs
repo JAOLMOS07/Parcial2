@@ -63,7 +63,7 @@ namespace Logica
         {
             TotalPago(formulario);
             repositorio.GuardarEnArchivo(formulario);
-           // Refrescar();
+            Refrescar();
         }
     }
 }
