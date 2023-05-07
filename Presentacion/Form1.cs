@@ -26,7 +26,7 @@ namespace Presentacion
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            int numeroF = Int32.Parse(txtnumeroFormulario.Text);
+            int numeroF = int.Parse(txtnumeroFormulario.Text);
             string id = txtID.Text;
             string nombre = txtNombre.Text;
             DateTime fecha;

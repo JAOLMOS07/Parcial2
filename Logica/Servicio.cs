@@ -58,7 +58,7 @@ namespace Logica
             formulario.TotalPago = Pago;
         }
 
-        public void Refrescar()
+        private void Refrescar()
         {
             listaFormularios=repositorio.ObtenerFormulariosDesdeArchivo();
         }
