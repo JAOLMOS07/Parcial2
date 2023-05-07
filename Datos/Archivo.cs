@@ -13,13 +13,13 @@ namespace Datos
     public class Archivo
     {
         string ruta = "formularios.txt";
-        public List<Formulario> ObtenerFormulariosDesdeArchivo(string rutaArchivo)
+        public List<Formulario> ObtenerFormulariosDesdeArchivo()
         {
             List<Formulario> formularios = new List<Formulario>();
 
             try
             {
-                StreamReader lector = new StreamReader(rutaArchivo);
+                StreamReader lector = new StreamReader(ruta);
 
                 string linea;
                 while ((linea = lector.ReadLine()) != null)
