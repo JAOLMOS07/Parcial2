@@ -1,16 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
 using Entidades;
+using Datos;
 
 namespace Logica
 {
     public class Servicio
     {
-        public Servicio() { }
+        List<Formulario> listaFormularios = new List<Formulario>();
+
+        public Servicio() 
+        {
+            listaFormularios = repositorio.ConsultarTodos();
+        }
 
         public double SancionExtemporanea(Formulario formulario)
         {
@@ -49,6 +56,17 @@ namespace Logica
                 Pago = formulario.ValorDeclarado;
             }
             formulario.TotalPago = Pago;
+        }
+
+        public void Refrescar()
+        {
+            listaFormularios=repositorio.ConsultarTodos();
+        }
+        public void Guardar(Formulario formulario)
+        {
+            TotalPago(formulario);
+            repositorio.GuardarArchivo(formulario);
+            Refrescar();
         }
     }
 }
