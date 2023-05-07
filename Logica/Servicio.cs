@@ -36,16 +36,19 @@ namespace Logica
             return 1160000 / 30;
         }
 
-        public double TotalPago(Formulario formulario)
+        public void TotalPago(Formulario formulario)
         {
+            double Pago;
+            
             if(DiasExtemporaneos(formulario.DiaDeclaracionRealizada) > 0)
             {
-                return formulario.ValorDeclarado + SancionExtemporanea(formulario);
+                 Pago = formulario.ValorDeclarado + SancionExtemporanea(formulario);
             }
             else
             {
-                return formulario.ValorDeclarado;
+                Pago = formulario.ValorDeclarado;
             }
+            formulario.TotalPago = Pago;
         }
     }
 }
