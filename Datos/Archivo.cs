@@ -26,7 +26,7 @@ namespace Datos
                     {
                         string[] datos = linea.Split(',');
 
-                        double numeroFormulario = Convert.ToDouble(datos[0]);
+                        double numeroFormulario =Double.Parse(datos[0]);
                         string idNit = datos[1];
                         string nombreRazonSocial = datos[2];
                         DateTime diaDeclaracionRealizada = DateTime.ParseExact(datos[3], "dd/MM/yyyy", CultureInfo.InvariantCulture);

@@ -14,10 +14,7 @@ namespace Logica
         List<Formulario> listaFormularios = new List<Formulario>();
         Archivo repositorio = new Archivo();
 
-        public Servicio() 
-        {
-            listaFormularios = repositorio.ObtenerFormulariosDesdeArchivo();
-        }
+     
 
         public double SancionExtemporanea(Formulario formulario)
         {
@@ -66,7 +63,7 @@ namespace Logica
         {
             TotalPago(formulario);
             repositorio.GuardarEnArchivo(formulario);
-            Refrescar();
+           // Refrescar();
         }
     }
 }
