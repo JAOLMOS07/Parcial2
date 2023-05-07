@@ -39,7 +39,7 @@ namespace Presentacion
             }
             else
             {
-            
+
                 fecha = DateTime.MinValue;
             }
 
@@ -49,12 +49,13 @@ namespace Presentacion
             {
                 emplazamiento = true;
             }
-            else {
-            emplazamiento= false;
+            else
+            {
+                emplazamiento = false;
             }
 
             double valorDeclarado = double.Parse(txtvalorDeclarado.Text);
-            Formulario formulario = new Formulario(numeroF,id,nombre,fecha,emplazamiento,valorDeclarado,0);
+            Formulario formulario = new Formulario(numeroF, id, nombre, fecha, emplazamiento, valorDeclarado, 0);
 
             servicio.Guardar(formulario);
 
@@ -65,13 +66,23 @@ namespace Presentacion
             Console.WriteLine("xcv");
         }
 
-        private void Consecutivo()
+        public void Refrescar()
         {
-
+            CargarDataGrid();
         }
         public void CargarDataGrid()
         {
-            grillaDatos.DataSource = servicio.listaFormularios;
+            grillaDatos.DataSource = servicio.ObtenerListaFormularios();
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Refrescar();
         }
     }
 }
