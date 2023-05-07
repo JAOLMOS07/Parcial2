@@ -36,7 +36,7 @@
             this.rNo = new System.Windows.Forms.RadioButton();
             this.rSi = new System.Windows.Forms.RadioButton();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.valorDeclarado = new System.Windows.Forms.TextBox();
+            this.txtvalorDeclarado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFechaPicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +48,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtFechav = new System.Windows.Forms.TextBox();
+            this.txtSancionv = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtValorDeclaradov = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.rNov = new System.Windows.Forms.RadioButton();
             this.rSiv = new System.Windows.Forms.RadioButton();
@@ -66,11 +71,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtValorDeclaradov = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtSancionv = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtFechav = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -100,7 +100,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(780, 497);
+            this.tabPage1.Size = new System.Drawing.Size(780, 532);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             // 
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.btnRegistrar);
-            this.groupBox1.Controls.Add(this.valorDeclarado);
+            this.groupBox1.Controls.Add(this.txtvalorDeclarado);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtFechaPicker);
             this.groupBox1.Controls.Add(this.label4);
@@ -180,13 +180,13 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // valorDeclarado
+            // txtvalorDeclarado
             // 
-            this.valorDeclarado.Location = new System.Drawing.Point(440, 178);
-            this.valorDeclarado.Name = "valorDeclarado";
-            this.valorDeclarado.Size = new System.Drawing.Size(221, 23);
-            this.valorDeclarado.TabIndex = 9;
-            this.valorDeclarado.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtvalorDeclarado.Location = new System.Drawing.Point(440, 178);
+            this.txtvalorDeclarado.Name = "txtvalorDeclarado";
+            this.txtvalorDeclarado.Size = new System.Drawing.Size(221, 23);
+            this.txtvalorDeclarado.TabIndex = 9;
+            this.txtvalorDeclarado.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
             // 
@@ -299,6 +299,45 @@
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
+            // 
+            // txtFechav
+            // 
+            this.txtFechav.Location = new System.Drawing.Point(450, 31);
+            this.txtFechav.Name = "txtFechav";
+            this.txtFechav.Size = new System.Drawing.Size(221, 23);
+            this.txtFechav.TabIndex = 27;
+            // 
+            // txtSancionv
+            // 
+            this.txtSancionv.Location = new System.Drawing.Point(561, 134);
+            this.txtSancionv.Name = "txtSancionv";
+            this.txtSancionv.Size = new System.Drawing.Size(101, 23);
+            this.txtSancionv.TabIndex = 26;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(561, 116);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 15);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Sanción:";
+            // 
+            // txtValorDeclaradov
+            // 
+            this.txtValorDeclaradov.Location = new System.Drawing.Point(450, 134);
+            this.txtValorDeclaradov.Name = "txtValorDeclaradov";
+            this.txtValorDeclaradov.Size = new System.Drawing.Size(101, 23);
+            this.txtValorDeclaradov.TabIndex = 24;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(450, 116);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 15);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Valor declarado:";
             // 
             // groupBox6
             // 
@@ -448,7 +487,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(780, 497);
+            this.tabPage4.Size = new System.Drawing.Size(780, 532);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -461,45 +500,6 @@
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "groupBox5";
-            // 
-            // txtValorDeclaradov
-            // 
-            this.txtValorDeclaradov.Location = new System.Drawing.Point(450, 134);
-            this.txtValorDeclaradov.Name = "txtValorDeclaradov";
-            this.txtValorDeclaradov.Size = new System.Drawing.Size(101, 23);
-            this.txtValorDeclaradov.TabIndex = 24;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(450, 116);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 15);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Valor declarado:";
-            // 
-            // txtSancionv
-            // 
-            this.txtSancionv.Location = new System.Drawing.Point(561, 134);
-            this.txtSancionv.Name = "txtSancionv";
-            this.txtSancionv.Size = new System.Drawing.Size(101, 23);
-            this.txtSancionv.TabIndex = 26;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(561, 116);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 15);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Sanción:";
-            // 
-            // txtFechav
-            // 
-            this.txtFechav.Location = new System.Drawing.Point(450, 31);
-            this.txtFechav.Name = "txtFechav";
-            this.txtFechav.Size = new System.Drawing.Size(221, 23);
-            this.txtFechav.TabIndex = 27;
             // 
             // Form1
             // 
@@ -536,7 +536,7 @@
         private GroupBox groupBox1;
         private TextBox txtnumeroFormulario;
         private Label label1;
-        private TextBox valorDeclarado;
+        private TextBox txtvalorDeclarado;
         private Label label5;
         private DateTimePicker txtFechaPicker;
         private Label label4;
